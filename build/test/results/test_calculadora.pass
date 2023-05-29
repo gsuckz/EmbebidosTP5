@@ -1,0 +1,39 @@
+---
+:source:
+  :file: test/test_calculadora.c
+  :dirname: test
+  :basename: test_calculadora.c
+:successes:
+- :test: test_crear_calculadora
+  :line: 5
+  :message: ''
+  :unity_test_time: 0
+- :test: test_agregar_operacion
+  :line: 26
+  :message: ''
+  :unity_test_time: 0
+- :test: test_hacer_suma
+  :line: 35
+  :message: ''
+  :unity_test_time: 0
+- :test: test_hacer_resta
+  :line: 44
+  :message: ''
+  :unity_test_time: 0
+- :test: test_hacer_producto
+  :line: 53
+  :message: ''
+  :unity_test_time: 0
+- :test: test_hacer_cociente
+  :line: 62
+  :message: ''
+  :unity_test_time: 0
+:failures: []
+:ignores: []
+:counts:
+  :total: 6
+  :passed: 6
+  :failed: 0
+  :ignored: 0
+:stdout: []
+:time: 0.05529360007494688
