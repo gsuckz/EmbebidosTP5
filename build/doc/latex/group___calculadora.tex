@@ -1,0 +1,93 @@
+\hypertarget{group___calculadora}{}\doxysection{Calculadora}
+\label{group___calculadora}\index{Calculadora@{Calculadora}}
+
+
+Calculadora Dinámica.  
+
+
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group___calculadora_ga22e8a501f3108fb5d6b9cffbb5cf256f}\label{group___calculadora_ga22e8a501f3108fb5d6b9cffbb5cf256f}} 
+typedef struct calculadora\+\_\+s $\ast$ {\bfseries calculadora\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Declaración del descriptor para la clase calculadora. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group___calculadora_ga96a49b38ea76e3b9ec9651039e3ed685}\label{group___calculadora_ga96a49b38ea76e3b9ec9651039e3ed685}} 
+typedef int($\ast$ {\bfseries funcion\+\_\+t}) (int, int)
+\begin{DoxyCompactList}\small\item\em Se declara la estructura con la que se deben implementar las operaciones. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group___calculadora_ga22e8a501f3108fb5d6b9cffbb5cf256f}{calculadora\+\_\+t}} \mbox{\hyperlink{group___calculadora_ga672586265e01d9054a1692384bb7b9d7}{Crear\+Calculadora}} (void)
+\begin{DoxyCompactList}\small\item\em Metodo de creacion de una calculadora. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group___calculadora_gaba519c020d2d4d94b51d0fb24dd9ad11}{Agregar\+Operacion}} (\mbox{\hyperlink{group___calculadora_ga22e8a501f3108fb5d6b9cffbb5cf256f}{calculadora\+\_\+t}} calculadora, char operador, \mbox{\hyperlink{group___calculadora_ga96a49b38ea76e3b9ec9651039e3ed685}{funcion\+\_\+t}} funcion)
+\begin{DoxyCompactList}\small\item\em Metodo para agragar operaciones a la calculadora. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___calculadora_ga5893d77cd47f5256781cf6cc858e6b74}{Calcular}} (\mbox{\hyperlink{group___calculadora_ga22e8a501f3108fb5d6b9cffbb5cf256f}{calculadora\+\_\+t}} calculadora, char $\ast$cadena)
+\begin{DoxyCompactList}\small\item\em Metodo para realizar los calculos. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group___calculadora_ga8d0cf3f79b18f21e1b841bbccb9ac493}\label{group___calculadora_ga8d0cf3f79b18f21e1b841bbccb9ac493}} 
+void {\bfseries Borrar\+Calculadora} (\mbox{\hyperlink{group___calculadora_ga22e8a501f3108fb5d6b9cffbb5cf256f}{calculadora\+\_\+t}} calculadora)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Calculadora Dinámica. 
+
+Implementacion de una calculadora dinámica en la que podrá crear sus propias operaciones siguiendo una estructura predefinida. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group___calculadora_gaba519c020d2d4d94b51d0fb24dd9ad11}\label{group___calculadora_gaba519c020d2d4d94b51d0fb24dd9ad11}} 
+\index{Calculadora@{Calculadora}!AgregarOperacion@{AgregarOperacion}}
+\index{AgregarOperacion@{AgregarOperacion}!Calculadora@{Calculadora}}
+\doxysubsubsection{\texorpdfstring{AgregarOperacion()}{AgregarOperacion()}}
+{\footnotesize\ttfamily bool Agregar\+Operacion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group___calculadora_ga22e8a501f3108fb5d6b9cffbb5cf256f}{calculadora\+\_\+t}}}]{calculadora,  }\item[{char}]{operador,  }\item[{\mbox{\hyperlink{group___calculadora_ga96a49b38ea76e3b9ec9651039e3ed685}{funcion\+\_\+t}}}]{funcion }\end{DoxyParamCaption})}
+
+
+
+Metodo para agragar operaciones a la calculadora. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em calculadora} & Puntero al objeto Calculadora que se agrega la operacion (puntero) \\
+\hline
+{\em operador} & Simbolo del operador (char) \\
+\hline
+{\em funcion} & Puntero a la funcion que se asociarà con el Operador (puntero a funcion) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true\+: La operacion se almaceno 
+
+false\+: La operacion no se almacena 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group___calculadora_ga5893d77cd47f5256781cf6cc858e6b74}\label{group___calculadora_ga5893d77cd47f5256781cf6cc858e6b74}} 
+\index{Calculadora@{Calculadora}!Calcular@{Calcular}}
+\index{Calcular@{Calcular}!Calculadora@{Calculadora}}
+\doxysubsubsection{\texorpdfstring{Calcular()}{Calcular()}}
+{\footnotesize\ttfamily int Calcular (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group___calculadora_ga22e8a501f3108fb5d6b9cffbb5cf256f}{calculadora\+\_\+t}}}]{calculadora,  }\item[{char $\ast$}]{cadena }\end{DoxyParamCaption})}
+
+
+
+Metodo para realizar los calculos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em calculadora} & Puntero a la calculadora que realiza la operacion \\
+\hline
+{\em cadena} & Operacion a realizar por calculadora Ej\+: \char`\"{}2+4\char`\"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Resultado del calculo 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group___calculadora_ga672586265e01d9054a1692384bb7b9d7}\label{group___calculadora_ga672586265e01d9054a1692384bb7b9d7}} 
+\index{Calculadora@{Calculadora}!CrearCalculadora@{CrearCalculadora}}
+\index{CrearCalculadora@{CrearCalculadora}!Calculadora@{Calculadora}}
+\doxysubsubsection{\texorpdfstring{CrearCalculadora()}{CrearCalculadora()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group___calculadora_ga22e8a501f3108fb5d6b9cffbb5cf256f}{calculadora\+\_\+t}} Crear\+Calculadora (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Metodo de creacion de una calculadora. 
+
+\begin{DoxyReturn}{Returns}
+calculadora\+\_\+t\+: descriptor de calculadora 
+\end{DoxyReturn}

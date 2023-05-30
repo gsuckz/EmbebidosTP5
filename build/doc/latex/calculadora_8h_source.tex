@@ -1,0 +1,63 @@
+\hypertarget{calculadora_8h_source}{}\doxysection{calculadora.\+h}
+\label{calculadora_8h_source}\index{src/calculadora.h@{src/calculadora.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/************************************************************************************************}}
+\DoxyCodeLine{00002\ \textcolor{comment}{Copyright\ (c)\ 2023,\ Jesus\ Gerardo\ Daniel\ Avila\ jesus.avila.05@gmail.com}}
+\DoxyCodeLine{00003\ \textcolor{comment}{Permission\ is\ hereby\ granted,\ free\ of\ charge,\ to\ any\ person\ obtaining\ a\ copy\ of\ this\ software\ and}}
+\DoxyCodeLine{00004\ \textcolor{comment}{associated\ documentation\ files\ (the\ "{}Software"{}),\ to\ deal\ in\ the\ Software\ without\ restriction,}}
+\DoxyCodeLine{00005\ \textcolor{comment}{including\ without\ limitation\ the\ rights\ to\ use,\ copy,\ modify,\ merge,\ publish,\ distribute,}}
+\DoxyCodeLine{00006\ \textcolor{comment}{sublicense,\ and/or\ sell\ copies\ of\ the\ Software,\ and\ to\ permit\ persons\ to\ whom\ the\ Software\ is}}
+\DoxyCodeLine{00007\ \textcolor{comment}{furnished\ to\ do\ so,\ subject\ to\ the\ following\ conditions:}}
+\DoxyCodeLine{00008\ \textcolor{comment}{The\ above\ copyright\ notice\ and\ this\ permission\ notice\ shall\ be\ included\ in\ all\ copies\ or\ substantial}}
+\DoxyCodeLine{00009\ \textcolor{comment}{portions\ of\ the\ Software.}}
+\DoxyCodeLine{00010\ \textcolor{comment}{THE\ SOFTWARE\ IS\ PROVIDED\ "{}AS\ IS"{},\ WITHOUT\ WARRANTY\ OF\ ANY\ KIND,\ EXPRESS\ OR\ IMPLIED,\ INCLUDING\ BUT}}
+\DoxyCodeLine{00011\ \textcolor{comment}{NOT\ LIMITED\ TO\ THE\ WARRANTIES\ OF\ MERCHANTABILITY,\ FITNESS\ FOR\ A\ PARTICULAR\ PURPOSE\ AND}}
+\DoxyCodeLine{00012\ \textcolor{comment}{NONINFRINGEMENT.\ IN\ NO\ EVENT\ SHALL\ THE\ AUTHORS\ OR\ COPYRIGHT\ HOLDERS\ BE\ LIABLE\ FOR\ ANY\ CLAIM,\ DAMAGES}}
+\DoxyCodeLine{00013\ \textcolor{comment}{OR\ OTHER\ LIABILITY,\ WHETHER\ IN\ AN\ ACTION\ OF\ CONTRACT,\ TORT\ OR\ OTHERWISE,\ ARISING\ FROM,\ OUT\ OF\ OR\ IN}}
+\DoxyCodeLine{00014\ \textcolor{comment}{CONNECTION\ WITH\ THE\ SOFTWARE\ OR\ THE\ USE\ OR\ OTHER\ DEALINGS\ IN\ THE\ SOFTWARE.}}
+\DoxyCodeLine{00015\ \textcolor{comment}{SPDX-\/License-\/Identifier:\ MIT}}
+\DoxyCodeLine{00016\ \textcolor{comment}{*************************************************************************************************/}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#ifndef\ CALCULADORA\_H}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#define\ CALCULADORA\_H}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00029\ \textcolor{comment}{/*\ ===\ Headers\ files\ inclusions\ ================================================================\ */}}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#include\ <stdbool.h>}}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{comment}{/*\ ===\ Cabecera\ C++\ ============================================================================\ */}}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00036\ \textcolor{keyword}{extern}\ \textcolor{stringliteral}{"{}C"{}}\ \{}
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{comment}{/*\ ===\ Public\ macros\ definitions\ ===============================================================\ */}}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{comment}{/*\ ===\ Public\ data\ type\ declarations\ ===========================================================\ */}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00044\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }calculadora\_s\ *\ \mbox{\hyperlink{group___calculadora_ga22e8a501f3108fb5d6b9cffbb5cf256f}{calculadora\_t}};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00047\ \textcolor{keyword}{typedef}\ int\ (*\mbox{\hyperlink{group___calculadora_ga96a49b38ea76e3b9ec9651039e3ed685}{funcion\_t}})(int,\ int);}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \textcolor{comment}{/*\ ===\ Public\ variable\ declarations\ ============================================================\ */}}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \textcolor{comment}{/*\ ===\ Public\ function\ declarations\ ============================================================\ */}}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00058\ \mbox{\hyperlink{group___calculadora_ga22e8a501f3108fb5d6b9cffbb5cf256f}{calculadora\_t}}\ \mbox{\hyperlink{group___calculadora_ga672586265e01d9054a1692384bb7b9d7}{CrearCalculadora}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00069\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{group___calculadora_gaba519c020d2d4d94b51d0fb24dd9ad11}{AgregarOperacion}}(\mbox{\hyperlink{group___calculadora_ga22e8a501f3108fb5d6b9cffbb5cf256f}{calculadora\_t}}\ calculadora,\ \textcolor{keywordtype}{char}\ operador,\ \mbox{\hyperlink{group___calculadora_ga96a49b38ea76e3b9ec9651039e3ed685}{funcion\_t}}\ funcion);}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00078\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{group___calculadora_ga5893d77cd47f5256781cf6cc858e6b74}{Calcular}}(\mbox{\hyperlink{group___calculadora_ga22e8a501f3108fb5d6b9cffbb5cf256f}{calculadora\_t}}\ calculadora,\ \textcolor{keywordtype}{char}\ *\ cadena);}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \textcolor{keywordtype}{void}\ BorrarCalculadora(\ \mbox{\hyperlink{group___calculadora_ga22e8a501f3108fb5d6b9cffbb5cf256f}{calculadora\_t}}\ calculadora);}
+\DoxyCodeLine{00082\ \textcolor{comment}{/*\ ===\ End\ of\ documentation\ ====================================================================\ */}}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00085\ \}}
+\DoxyCodeLine{00086\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00090\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ CALCULADORA\_H\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}
