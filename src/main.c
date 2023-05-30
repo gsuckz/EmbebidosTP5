@@ -45,8 +45,8 @@ SPDX-License-Identifier: MIT
 /**
  * @brief Funcion definida por el usuario
  * Realiza la suma de a y b, es decir, a + b
- * @param a Primer término
- * @param b Segundo término
+ * @param a Primer  sumando
+ * @param b Segundo sumando
  * @return Retorna la suma como un entero.
  */
 int Suma(int a, int b);
@@ -54,8 +54,8 @@ int Suma(int a, int b);
 /**
  * @brief Funcion definida por el usuario
  * Realiza la diferencia de a y b, es decir, a - b
- * @param a Primer término
- * @param b Segundo término
+ * @param a Minuendo
+ * @param b Sustraendo
  * @return Retorna la diferencia como un entero.
  */
 int Resta(int a, int b);
@@ -63,8 +63,8 @@ int Resta(int a, int b);
 /**
  * @brief Funcion definida por el usuario
  * Realiza el producto de a y b, es decir, a * b
- * @param a Primer elemento
- * @param b Segundo elemento
+ * @param a Primer  Factor
+ * @param b Segundo Factor
  * @return Retorna el producto como un entero.
  */
 int Producto(int a, int b);
@@ -126,8 +126,7 @@ int main(void) {
 
     resultado = Calcular(mi_calculadora, "789614385/5");
     printf("789614385 / 5 = %i\n", resultado);
-   // BorrarCalculadora(mi_calculadora);
-   // mi_calculadora = NULL;
+
     return 0;
 }
 

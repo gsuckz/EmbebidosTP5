@@ -78,12 +78,6 @@ calculadora_t CrearCalculadora(void) {
     return calculadora;
 }
 
-//void BorrarCalculadora(calculadora_t calculadora){
-//    Liberar memoria operaciones;
-//    free();
-//    Liberar memoria calculadora;
-//    free(calculadora);
-//}
 
 bool AgregarOperacion(calculadora_t calculadora, char operador, funcion_t funcion) {
     operacion_t operacion = NULL;
@@ -101,7 +95,7 @@ bool AgregarOperacion(calculadora_t calculadora, char operador, funcion_t funcio
   //  return  (operacion != NULL);
 }
 
-operacion_t BuscarOperacion(calculadora_t calculadora, char operador) {
+static operacion_t BuscarOperacion(calculadora_t calculadora, char operador) {
     operacion_t result = NULL;
     operacion_t actual = calculadora->operaciones;
 
